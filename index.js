@@ -121,5 +121,5 @@ const calculate = () => {
     item.value;
     total += parseInt(item.value);
   });
-  document.querySelector("#displayPrice").innerText = total;
+  document.querySelector("#displayPrice").innerText = `Rp.${total}`;
 };

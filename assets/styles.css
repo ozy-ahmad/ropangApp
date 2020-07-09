@@ -13,7 +13,6 @@ body {
 }
 
 main {
-    /* margin-top: 35rem; */
     margin-left: 5rem;
     margin-right: 5rem;
 
@@ -36,4 +35,56 @@ h4,
 h5,
 h6 {
     color: black;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 20px;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.ropangImg {
+    display: inline-block;
+}
+
+.titleHead {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.checkboxTick {
+    display: flex;
+    flex-direction: row;
+}
+
+.sizeWrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    font-weight: 20px;
+    border-radius: 10px;
+    grid-template-areas: "areaSize areaSize areaSize"
+}
+
+.checkWrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    font-weight: 20px;
+    border-radius: 10px;
+    grid-template-areas: "area area area"
 }
