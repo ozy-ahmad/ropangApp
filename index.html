@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Ropang App</title>
+  </head>
+  <body>
+    <main>
+      <!-- title -->
+      <h1>Roti Panggang</h1>
+
+      <!-- Ropang menu -->
+      <h2>Choose your Ropang</h2>
+      <form name="formRopangMenu">
+        <!-- radio button ropang manis -->
+        <input type="radio" id="ropang-manis" name="ropang" value="15000" />
+        <label for="ropang-manis"
+          >Ropang Manis<br />
+          <span id="ropangManisPrice"></span> </label
+        ><br />
+
+        <!-- radio button ropang asin -->
+        <input type="radio" id="ropang-asin" name="ropang" value="20000" />
+        <label for="ropang-asin"
+          >Ropang Asin <br />
+          <span id="ropangAsinPrice"></span></label
+        ><br />
+      </form>
+
+      <!-- Ropang size -->
+      <h2>Choose your Ropang size</h2>
+      <form name="formRopangSize">
+        <!-- kilo -->
+        <input type="radio" id="kilo" name="ropang-size" value="-3000" />
+        <label for="kilo">Kilo</label><br />
+        <!-- mega -->
+        <input
+          type="radio"
+          id="mega"
+          name="ropang-size"
+          value="0"
+          checked="checked"
+        />
+        <label for="mega">Mega</label><br />
+        <!-- giga -->
+        <input type="radio" id="giga" name="ropang-size" value="5000" />
+        <label for="giga">Giga</label><br />
+      </form>
+
+      <!-- topping checkbox -->
+      <h2>Choose your topping</h2>
+      <form>
+        <!-- milo -->
+        <input
+          class="manis"
+          type="checkbox"
+          id="milo"
+          name="toping"
+          value="1000"
+          disabled
+        />
+        <label for="milo"> Milo</label><br />
+        <!-- meses -->
+        <input
+          class="manis"
+          type="checkbox"
+          id="meses"
+          name="toping"
+          value="1000"
+          disabled
+        />
+        <label for="vehicle2"> Meses</label><br />
+        <!-- chocochip -->
+        <input
+          class="manis"
+          type="checkbox"
+          id="chocochip"
+          name="toping"
+          value="1000"
+          disabled
+        ></input>
+        <label for="chocochip"> Chocochip </label><br />
+        <!-- koko krunch -->
+        <input
+          class="manis"
+          type="checkbox"
+          id="koko-krunch"
+          name="toping"
+          value="1000"
+          disabled
+        />
+        <label for="koko-krunch"> Koko Krunch </label><br />
+        <!-- mozarela -->
+        <input
+          class="manis asin"
+          type="checkbox"
+          id="mozarela"
+          name="toping"
+          value="3000"
+          disabled
+        />
+        <label for="mozarela"> Mozarela </label><br />
+        <!-- cheddar -->
+        <input
+          class="manis asin"
+          type="checkbox"
+          id="cheddar"
+          name="toping"
+          value="3000"
+          disabled
+        />
+        <label for="cheddar"> Cheddar </label><br />
+        <!-- green tea -->
+        <input
+          class="manis"
+          type="checkbox"
+          id="green-tea"
+          name="toping"
+          value="3000"
+          disabled
+        />
+        <label for="green-tea"> Green tea </label><br />
+        <!-- boba -->
+        <input
+          class="manis"
+          type="checkbox"
+          id="boba"
+          name="toping"
+          value="3000"
+          disabled
+        />
+        <label for="boba"> Boba </label><br />
+        <!-- tuna -->
+        <input
+          class="asin"
+          type="checkbox"
+          id="tuna"
+          name="toping"
+          value="5000"
+          disabled
+        />
+        <label for="tuna"> Tuna </label><br />
+        <!-- ayam -->
+        <input
+          class="asin"
+          type="checkbox"
+          id="ayam"
+          name="toping"
+          value="5000"
+          disabled
+        />
+        <label for="ayam"> Ayam </label><br />
+        <!-- pepperoni -->
+        <input
+          class="asin"
+          type="checkbox"
+          id="pepperoni"
+          name="toping"
+          value="5000"
+          disabled
+        />
+        <label for="pepperoni"> Pepperoni </label><br />
+        <!-- korner -->
+        <input
+          class="asin"
+          type="checkbox"
+          id="kornet"
+          name="toping"
+          value="5000"
+          disabled
+        />
+        <label for="kornet"> Kornet </label><br />
+      </form>
+
+      <!-- Price -->
+      <h2>This is your price</h2>
+      <h1 id="displayPrice">0</h1>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
